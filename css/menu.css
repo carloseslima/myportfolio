@@ -111,6 +111,7 @@ nav ul li{
     }
 
     #label-menu{
+        display: flex;
         color: #fff;
         font-size: 16pt;
     }
