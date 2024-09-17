@@ -17,7 +17,7 @@ header{
     text-decoration: none;
 }
 
-#input-menu-container{
+#menu-checkbox, #label-menu{
     display: none;
 }
 
