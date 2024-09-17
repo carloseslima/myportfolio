@@ -1,0 +1,122 @@
+header{
+    display: flex;
+    position: fixed;
+    width: 90%;
+    background-color: var(--verde1);
+    padding: 10px 5%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+#logo{
+    display: flex;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#nome-perfil{
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .2s;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 5px solid var(--verde1);
+}
+
+#perfil:hover #nome-perfil{
+    border-bottom: 5px solid var(--verde2);
+    background-color: #000;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    list-style: none;
+    
+}
+
+.link-menu{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+    padding: 5px 10px;
+    transition: .2s;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 4px solid var(--verde1);
+    border-radius: 5px;
+
+    
+}
+
+.link-menu:hover{
+    color: #fff;
+    background-color: #000;
+    border-bottom: 4px solid var(--verde2);
+    border-radius: 5px;
+}
+
+.link-contato{
+    color: #fff;
+    font-size: 25pt;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 5px solid var(--verde1);
+    transition: .2s;
+}
+
+.link-contato:hover{
+    background-color: #000;
+    border-bottom: 5px solid var(--verde2);
+    
+}
+
+
+
+
+@media (max-width: 1000px) {
+    header{
+        display: flex;
+        position: fixed;
+        width: 90%;
+        padding: 10px 5%;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    nav{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+        background-color: var(--verde1);
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+}
