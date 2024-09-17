@@ -17,6 +17,10 @@ header{
     text-decoration: none;
 }
 
+#input-menu-container{
+    display: none;
+}
+
 #logo{
     display: flex;
     width: 50px;
@@ -65,15 +69,12 @@ nav ul li{
     font-weight: 500;
     border-bottom: 4px solid var(--verde1);
     border-radius: 5px;
-
-    
 }
 
 .link-menu:hover{
     color: #fff;
     background-color: #000;
     border-bottom: 4px solid var(--verde2);
-    border-radius: 5px;
 }
 
 .link-contato{
@@ -105,18 +106,46 @@ nav ul li{
         z-index: 100;
     }
 
-    nav{
-        display: flex;
+    #menu-checkbox{
+        display: none;
+    }
+
+    #label-menu{
+        color: #fff;
+        font-size: 16pt;
+    }
+
+    
+
+    #nav-menu{
         position: absolute;
-        right: 0;
-        top: 0;
+        right: -100%;
+        top: 100px;
         align-items: center;
         flex-direction: column;
         gap: 60px;
         background-color: var(--verde1);
+        transition: .2s;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
-    nav ul{
+    #menu-checkbox:checked ~ #nav-menu{
+        right: 0;
+    }
+
+    #nav-menu ul{
         flex-direction: column;
+        align-items: center;
+    }
+
+    .link-menu{
+        padding: 10px 0;
+        width: 200px;
+        justify-content: center;
     }
 }

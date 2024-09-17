@@ -1,7 +1,8 @@
 #projetos{
     display: flex;
     width: 90%;
-    padding: 25vh 5% 100px 5%;
+    height: 100vh;
+    padding: 0 5% 0 5%;
     background-color: var(--cinza1);
     gap: 100px;
     justify-content: center;
@@ -10,7 +11,6 @@
     color: #fff;
     font-family: "Roboto Mono", monospace;
 }
-
 #projetos h2{
     color: #fff;
     font-family: "Roboto Mono", monospace;
@@ -23,17 +23,15 @@
 
 .container-projetos{
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 90%;
     justify-content: center;
+    gap: 30px;
 }
 
 .projeto{
+    width: 300px;
     border-radius: 10px;
     overflow: hidden;
     border-bottom: 5px solid var(--verde2);
-    width: 300px;
 }
 
 .projeto a{
@@ -44,20 +42,38 @@
     background-color: var(--verde2);
     color: #000;
     font-weight: 900;
-    text-align: center;
 }
 
 .projeto p{
-    padding: 10px 0;
+    padding: 10px;
+    
 }
 
-.img-projeto{
+.projeto img{
     display: flex;
     width: 100%;
     opacity: .9;
     transition: .2s;
 }
 
-.projeto a:hover .img-projeto{
+.projeto img:hover{
     opacity: 1;
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+    #projetos{
+        height: auto;
+        padding: 200px 0;
+        width: 100%;
+    }
+
+    .container-projetos{
+        flex-wrap: wrap;
+    }
 }

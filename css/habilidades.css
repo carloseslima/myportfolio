@@ -62,6 +62,12 @@
 
 
 @media (max-width: 1000px) {
+    #habilidades{
+        height: auto;
+        padding: 200px 5%;
+        width: 90%;
+    }
+
     .container-habilidades{
         display: flex;
         width: 100%;
