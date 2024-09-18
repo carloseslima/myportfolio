@@ -100,8 +100,16 @@ a.tech-link{
     background-color: var(--verde1);
 }
 
+.tech-nome, .tech-ico{
+    color: var(--verde2);
+}
+
 a.tech-link:hover{
     background-color: var(--cinza1);
+}
+
+a.tech-link:hover .tech-nome, a.tech-link:hover .tech-ico{
+    color: var(--verde1);
 }
 
 
