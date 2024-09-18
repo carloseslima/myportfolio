@@ -1,7 +1,7 @@
 #habilidades{
     display: flex;
     width: 90%;
-    height: 100vh;
+    height: 90vh;
     padding: 0 5% 0 5%;
     background-color: var(--cinza1);
     gap: 80px;
@@ -10,6 +10,7 @@
     flex-direction: column;
     color: #fff;
     font-family: "Roboto Mono", monospace;
+    
 }
 
 #habilidades h2{

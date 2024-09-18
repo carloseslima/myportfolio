@@ -1,16 +1,17 @@
 #projetos{
     display: flex;
     width: 90%;
-    height: 100vh;
+    height: 90vh;
     padding: 0 5% 0 5%;
     background-color: var(--cinza1);
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #fff;
     font-family: "Roboto Mono", monospace;
 }
+
 #projetos h2{
     color: #fff;
     font-family: "Roboto Mono", monospace;
@@ -25,13 +26,18 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .projeto{
+    display: flex;
+    flex-direction: column;
     width: 300px;
     border-radius: 10px;
     overflow: hidden;
     border-bottom: 5px solid var(--verde2);
+    background-color: #000;
+    align-items: center;
 }
 
 .projeto a{
@@ -46,7 +52,6 @@
 
 .projeto p{
     padding: 10px;
-    
 }
 
 .projeto img{
@@ -58,6 +63,45 @@
 
 .projeto img:hover{
     opacity: 1;
+}
+
+#tech-container{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.tech{
+    background-color: var(--verde2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.tech p{
+    color: #000;
+    font-size: 8pt;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.tech i{
+    color: #000;
+    font-size: 18pt;
+}
+
+a.tech-link{
+    background-color: var(--verde1);
+}
+
+a.tech-link:hover{
+    background-color: var(--cinza1);
 }
 
 

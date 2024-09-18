@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    padding: 25vh 5% 100px 5%;
+    padding: 50px 5%;
     background-color: var(--cinza1);
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     color: #fff;
     font-family: "Roboto Mono", monospace;
+    
 }
 
 #rodape h2{

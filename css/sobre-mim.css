@@ -1,12 +1,12 @@
 #sobre-mim{
     display: flex;
     width: 90%;
-    height: 100vh;
-    padding: 0 5% 0 5%;
+    height: 90vh;
+    padding: 20px 5%;
     background-color: var(--cinza1);
     gap: 100px;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 #sobre-mim div{
@@ -53,7 +53,10 @@
     #sobre-mim{
         flex-direction: column;
         height: auto;
-        padding: 50px 5%;
         width: 90%;
+    }
+
+    #sobre-mim div{
+        width: 100%;
     }
 }
