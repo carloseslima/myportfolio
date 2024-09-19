@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function(){
     // Aplica o efeito de scroll suave para todos os links que temjam as classes especificadas entre aspas
-    $('a.link-menu, a.link-interno').on('click', function(event) {
+    $('a.link-menu, a.link-interno, #subir').on('click', function(event) {
         // Verifica se o link tem o hash (ex: #inicio, #sobre-mim, etc.)
         if (this.hash !== "") {
             event.preventDefault(); // Previne o comportamento padrão do link
