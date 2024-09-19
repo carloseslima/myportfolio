@@ -21,7 +21,7 @@
 <body>
     <header>
         <a id="perfil" href="index.html">
-            <img src="images/carlos.webp" alt="logo" id="logo">
+            <img src="images/favicon.webp" alt="logo" id="logo">
             <p id="nome-perfil">Carlos Emanuel</p>
         </a>
         <input type="checkbox" id="menu-checkbox">
@@ -48,7 +48,10 @@
     <section id="inicio">
         <h1>Oi, tudo bem? Meu nome é <strong><span>Carlos</span></strong>.</h1>
         <p>Sou desenvolvedor Front-end <br>e também sou <span id="adjetivo">curioso.</span></p>
-        <a class="link-interno" href="#projetos">projetos</a>
+        <a class="link-interno" href="#projetos">
+            <p>projetos</p>
+            <i class="fa-solid fa-arrow-turn-down" id="projetos-down-ico"></i>
+        </a>
     </section>
 
     <section id="sobre-mim">
@@ -114,7 +117,7 @@
                         <p class="tech-nome">PHP</p>
                         <i class="fa-brands fa-php tech-ico"></i>
                     </div>
-                    <a href="https://github.com/emanuelgunner/cifraeletra" class="tech tech-link" target="_blank">
+                    <a href="https://github.com/emanuelgunner/cifraeletra" class="tech tech-link" target="_blank" title="Ver código">
                         <p class="tech-nome">Github</p>
                         <i class="fa-brands fa-github tech-ico"></i>
                     </a>
@@ -143,7 +146,7 @@
                         <p class="tech-nome">PHP</p>
                         <i class="fa-brands fa-php tech-ico"></i>
                     </div>
-                    <a href="https://github.com/emanuelgunner/pizzabreija" class="tech tech-link" target="_blank">
+                    <a href="https://github.com/emanuelgunner/pizzabreija" class="tech tech-link" target="_blank" title="Ver código">
                         <p class="tech-nome">Github</p>
                         <i class="fa-brands fa-github tech-ico"></i>
                     </a>
@@ -172,7 +175,7 @@
                         <p>PHP</p>
                         <i class="fa-brands fa-php tech-ico"></i>
                     </div>
-                    <a href="https://github.com/emanuelgunner/docesedelicias" class="tech tech-link" target="_blank">
+                    <a href="https://github.com/emanuelgunner/docesedelicias" class="tech tech-link" target="_blank" title="Ver código">
                         <p class="tech-nome">Github</p>
                         <i class="fa-brands fa-github tech-ico"></i>
                     </a>
@@ -201,7 +204,7 @@
                         <p class="tech-nome">PHP</p>
                         <i class="fa-brands fa-php tech-ico"></i>
                     </div>
-                    <a href="https://github.com/emanuelgunner/guassussefm" class="tech tech-link" target="_blank">
+                    <a href="https://github.com/emanuelgunner/guassussefm" class="tech tech-link" target="_blank" title="Ver código">
                         <p class="tech-nome">Github</p>
                         <i class="fa-brands fa-github tech-ico"></i>
                     </a>
@@ -227,7 +230,9 @@
                 <span class="contato-content">@carloseslima</span>
             </a href="#"> 
         </div>
+        <div>© 2024 | Carlos Emanuel Soares de Lima | Todos os direitos reservados</div>
     </footer>
+    <a href="#inicio" id="subir"><i class="fa-solid fa-up-long"></i></a>
 
     <script src="js/script.js"></script>
     
