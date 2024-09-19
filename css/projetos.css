@@ -97,19 +97,17 @@
 }
 
 a.tech-link{
-    background-color: var(--verde1);
+    background-color: var(--cinza3);
+    transition: .2s;
 }
 
 .tech-nome, .tech-ico{
     color: var(--verde2);
+    transition: .2s;
 }
 
 a.tech-link:hover{
-    background-color: var(--cinza1);
-}
-
-a.tech-link:hover .tech-nome, a.tech-link:hover .tech-ico{
-    color: var(--verde1);
+    background-color: var(--verde3);
 }
 
 

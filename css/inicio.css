@@ -26,6 +26,7 @@
 
 #inicio h1 span{
     color: var(--verde2);
+    text-shadow: 2px 2px 20px var(--verde2);
 }
 
 #inicio p{
@@ -33,10 +34,11 @@
     text-align: center; 
 }
 
-#inicio a{
+.link-interno{
+    display: flex;
+    align-items: center;
     color: #fff;
     background-color: var(--verde1);
-    padding: 10px 30px;
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -45,10 +47,30 @@
     top: 0;
     transition: .2s;
     transition-timing-function: ease-in-out;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 5px solid var(--verde1);
     
 }
-#inicio a:hover{
+
+.link-interno p{
+    padding: 0 10px;
+    margin: 0;
+}
+
+.link-interno i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.link-interno:hover{
     top: -2px;
+    background-color: #000;
+    border-bottom: 5px solid var(--verde2);
+    box-shadow: 2px 2px 20px var(--verde2);
 }
 
 #adjetivo{
