@@ -61,7 +61,7 @@ nav ul li{
 }
 
 .link-menu{
-    display: flex;
+    position: relative;
     text-decoration: none;
     color: #fff;
     font-family: "Roboto Mono", monospace;
@@ -71,6 +71,7 @@ nav ul li{
     font-weight: 500;
     border-bottom: 4px solid var(--verde1);
     border-radius: 5px;
+    width: max-content;
 }
 
 .link-menu:hover{
